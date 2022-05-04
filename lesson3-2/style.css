@@ -13,3 +13,11 @@ ul {
 .blueTable td {
     padding: 10px;
 }
+
+.blueTable tr:nth-child(odd) td:nth-child(odd){
+    background-color: yellow;
+}
+
+.blueTable tr:nth-child(even) td:nth-child(even){
+    background-color: yellow;
+}
