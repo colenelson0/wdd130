@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.blueTable {
+    border-collapse: collapse;
+}
+
+.blueTable tr, .blueTable td {
+    border:2px solid blue;
+}
+
+.blueTable td {
+    padding: 10px;
+}
