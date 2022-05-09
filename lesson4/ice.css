@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(251,166,201);
+}
+
+.pageStuff {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pageStuff h1 {
+    font-size: 3em;
+}
+
+.pageStuff ol {
+    text-align: left;
+    font-weight: bold;
+    line-height: 200%;
+    padding-left: 18px;
+}
+
+.pageStuff img {
+    width: 180px;
+}
+
+.white {
+    color: white;
+}
+
+.coolFont {
+    font-family: Arial, sans-serif;
+}
+
+.quotation {
+    font-size: 37px;
+}
+
+footer p {
+    margin: 0px auto;
+}
+
+h1:hover {
+    color: black;
+}
