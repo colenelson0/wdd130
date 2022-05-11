@@ -1,0 +1,44 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a, #hero-msg h1, #hero-msg h4, .button-box, main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
+
+body {
+    background-color:rgb(226, 232, 239);
+}
+header {
+    background-color:white;
+}
+nav a {
+    color: rgb(20,66,102);
+}
+nav a:hover {
+    background-color:rgb(120,197,215);
+    color: white;
+}
+#home-title, h4 {
+    color: white;
+}
+.book, .join {
+    background-color:rgb(77, 207, 236);
+}
+.book:hover, .join:hover {
+    background-color:rgb(252,225,113);
+}
+#background {
+    background-color:rgb(162, 204, 238);
+}
+.msg {
+    background-color:rgb(24, 106, 169);
+}
+footer {
+    background-color:#FFFCF2;
+}
