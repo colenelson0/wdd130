@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#top {
+    background-color: red;
+    line-height: 140px;
+    width: 600px;
+}
+
+#middle {
+    background-color: blue;
+    line-height: 180px;
+    width: 800px;
+}
+
+#bottom {
+    background-color: green;
+    line-height: 220px;
+    width: 1000px;
+}
