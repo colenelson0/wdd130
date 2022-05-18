@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Radio+Canada|Source+Sans+Pro');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -13,46 +15,100 @@ nav a, #hero-msg h1, #hero-msg h4, .button-box, main section {
 
 body {
     background-color:rgb(226, 232, 239);
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color:white;
 }
+h2 {
+    margin: 0;
+}
+main section img {
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 70px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
 nav a {
     color:rgb(20,66,102);
     text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 35px;
 }
 nav a:hover {
     background-color:rgb(120,197,215);
     color:white;
     text-decoration: none;
 }
+#home-title {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
 #home-title, h4 {
     color:white;
+}
+#hero-msg h4 {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .book, .join {
     background-color:rgb(77, 207, 236);
     color:rgb(20,66,102);
     text-decoration: none;
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color:rgb(252,225,113);
     color:rgb(24, 106, 169);
     text-decoration: none;
 }
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.rivers-card h2, .camping-card h2, .rapids-card h2 {
+    font-family: 'Radio Canada', sans-serif;
+}
+.card-img {
+    border: 10px solid black;
+}
 #background {
     background-color:rgb(162, 204, 238);
 }
+.mountains {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
 .msg {
     background-color:rgb(24, 106, 169);
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color:white;
+    font-family: 'Radio Canada', sans-serif;
 }
 .msg p {
     color:white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color:#FFFCF2;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 25px 50px;
+    margin-top: 200px;
+    margin-bottom: 20px;
 }
 footer h3 {
     color:black;
@@ -65,7 +121,11 @@ footer a:hover {
     color:rgb(24, 106, 169);
     text-decoration: none;
 }
+footer .social img {
+    padding-top: 15px;
+}
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
