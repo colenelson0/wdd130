@@ -31,6 +31,10 @@ Fonts are separated by a | */
   width: 40%;
 }
 
+.wireframe {
+  width: 50%;
+}
+
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
