@@ -70,7 +70,8 @@ nav a:hover {
 
 .mk101 div p {
     font-family: "Ubuntu", Tahoma, sans-serif;
-    line-height: 156%;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 .mk101 img {
