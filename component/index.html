@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow Component</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <h1>Album art creation process</h1>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 8</div>
+        <img src="./images/7s art ph1.png">
+        <div class="text">Seven white hexagons</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+        <img src="./images/7s art ph2.png">
+        <div class="text">Hexagons filled with mixed colors</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <img src="./images/7s art ph3.png">
+        <div class="text">Crude light and shadow added to hexagons</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="./images/7s art ph4.png">
+        <div class="text">Crude light and shadow replaced with refined light and shadow</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="./images/7s art ph5.png">
+        <div class="text">Addition of Roman numerals</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="./images/hept art 2 alpha.png">
+        <div class="text">Hexagon art scrapped; replaced by flatly colored towers</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src="./images/hept art 2 beta.png">
+        <div class="text">Towers filled with pixelated mixed colors; gradient added to background</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+        <img src="./images/hept art 2.png">
+        <div class="text">Bloom effect added (final art)</div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+  
+  <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+    </script>
+</body>
+</html>
